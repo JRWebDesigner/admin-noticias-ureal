@@ -13,7 +13,7 @@ export const postType = defineType({
     }),
     defineField({
       name: 'enlace',
-      type: 'url',
+      type: 'string',
       title: 'Enlace(URL completa)'
     }),
     defineField({
