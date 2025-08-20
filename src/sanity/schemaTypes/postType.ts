@@ -14,19 +14,6 @@ export const postType = defineType({
     defineField({
       name: 'enlaceExterno',
       type: 'string',
-      title: 'Enlace Externo',
-      description: 'URL completa (https://...) o mailto:correo@ejemplo.com',
-      validation: Rule => Rule.custom(value => {
-        if (!value) return true // Es opcional
-        if (value.startsWith('http://') || 
-            value.startsWith('https://') || 
-            value.startsWith('mailto:') || 
-            value.startsWith('/') || 
-            value.startsWith('#')) {
-          return true
-        }
-        return 'El enlace debe comenzar con http://, https://, mailto:, / o #'
-      })
     }),
     defineField({
       name: 'imagen',
