@@ -15,7 +15,7 @@ export const postType = defineType({
       name: 'enlace',
       type: 'url',
       title: 'Enlace(URL completa)'
-    })
+    }),
     defineField({
       name: 'imagen',
       type: 'image',
